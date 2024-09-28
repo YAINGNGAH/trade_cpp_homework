@@ -5,5 +5,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - run: g++ main.cpp my_add.cpp -o main
+            - run: g++ main.cpp src/my_add.cpp -o main
             - run: ./main 4 6

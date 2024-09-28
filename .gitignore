@@ -1,2 +1,5 @@
 .vscode
 build
+latex
+html
+docbook

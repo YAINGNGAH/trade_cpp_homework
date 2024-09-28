@@ -1,3 +1,6 @@
+/**
+    \brief Benchmark
+*/
 #include <benchmark/benchmark.h>
 
 #include "my_add.hpp"

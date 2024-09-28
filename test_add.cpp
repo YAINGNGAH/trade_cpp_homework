@@ -1,3 +1,6 @@
+/**
+    \brief Unit tests
+*/
 #include<gtest/gtest.h>
 
 #include "my_add.hpp"

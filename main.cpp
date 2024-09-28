@@ -1,3 +1,7 @@
+/**
+    \brief Sum of two terminal program.
+    ./build/main a b
+*/
 #include <cstdlib>
 #include <iostream>
 

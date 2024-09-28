@@ -13,9 +13,18 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
+FetchContent_Declare(
+    googlebenchmark
+    GIT_REPOSITORY https://github.com/google/benchmark.git
+    GIT_TAG main)
+FetchContent_MakeAvailable(googlebenchmark)
+
 enable_testing()
 add_executable(tests test_add.cpp src/my_add.cpp)
 target_link_libraries(tests gtest_main)
 
 include(GoogleTest)
 gtest_discover_tests(tests)
+
+add_executable(benchmark bench_add.cpp)
+target_link_libraries(benchmark benchmark::benchmark)

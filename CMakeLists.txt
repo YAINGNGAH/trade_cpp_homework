@@ -26,5 +26,5 @@ target_link_libraries(tests gtest_main)
 include(GoogleTest)
 gtest_discover_tests(tests)
 
-add_executable(bench bench_add.cpp)
+add_executable(bench bench_add.cpp src/my_add.cpp) 
 target_link_libraries(bench benchmark::benchmark)
